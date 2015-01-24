@@ -6,16 +6,16 @@
 
 class OshStepButtons {
   private:
-    static const int pulse_pin       = 11;
-    static const int step_pins_start = 30;
-    static const int play_pin        = 46;
-    static const int record_pin      = 47;
-    static const int shift_pin       = 48;
-    static const int yes_pin         = 49;
-    static const int up_pin          = 50;
-    static const int down_pin        = 51;
-    static const int right_pin       = 52;
-    static const int left_pin        = 53;
+    static const int pulse_pin      = 11;
+    static const int pins_start     = 30;
+    static const int play_index     = 16;
+    static const int record_index   = 17;
+    static const int shift_index    = 18;
+    static const int yes_index      = 19;
+    static const int up_index       = 20;
+    static const int down_index     = 21;
+    static const int right_index    = 22;
+    static const int left_index     = 23;
 
     static const int threshold = 400;
 
@@ -26,7 +26,15 @@ class OshStepButtons {
   public:
     OshStepButtons();
     ~OshStepButtons();
-    readPin( uint8_t);
+    bool getStep( uint8_t);
+    bool getPlay();
+    bool getRecord();
+    bool getShift();
+    bool getYes();
+    bool getUp();
+    bool getDown();
+    bool getRight();
+    bool getLeft();
 };
 
 #endif
