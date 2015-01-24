@@ -19,9 +19,6 @@ class OshStepButtons {
 
     static const int threshold = 400;
 
-    uint16_t sequencer_states
-    uint8_t function_states
-
     CapacitiveSensor* sensors;
   public:
     OshStepButtons();
